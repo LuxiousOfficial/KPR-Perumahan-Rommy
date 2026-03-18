@@ -22,7 +22,7 @@
                                 </a>
                             </li>
                             <li class="active group">
-                                <a href="my-mortgages.html">
+                                <a href="{{ route('dashboard') }}">
                                     <div class="relative flex items-center gap-[6px]">
                                         <img src="{{ asset('assets/images/icons/mortgages-y.svg') }}" alt="icon"
                                             class="hidden shrink-0 group-[&.active]:block" />
