@@ -257,7 +257,7 @@
                                                     class="size-6 shrink-0">
                                                 <p>Remaining Loan</p>
                                             </div>
-                                            <strong class="font-semibold">Rp {{ number_format($remainingLoanAmount, 0, '', '.') }}</strong>
+                                            <strong class="font-semibold">Rp {{ number_format($installment->remainingLoanAmount, 0, '', '.') }}</strong>
                                         </div>
                                         <div class="flex items-center justify-between">
                                             <div class="flex items-center gap-2">
@@ -265,7 +265,7 @@
                                                     class="size-6 shrink-0">
                                                 <p>Monthly Payment</p>
                                             </div>
-                                            <strong class="font-semibold">Rp {{ number_format($monthlyPayment, 0, '', '.') }}</strong>
+                                            <strong class="font-semibold">Rp {{ number_format($installment->monthlyPayment, 0, '', '.') }}</strong>
                                         </div>
                                         <div class="flex items-center justify-between">
                                             <div class="flex items-center gap-2">
@@ -273,7 +273,7 @@
                                                     class="size-6 shrink-0">
                                                 <p>PPN 11%</p>
                                             </div>
-                                            <strong class="font-semibold">Rp {{ number_format($totalTaxAmount, 0, '', '.') }}</strong>
+                                            <strong class="font-semibold">Rp {{ number_format($installment->totalTaxAmount, 0, '', '.') }}</strong>
                                         </div>
                                         <div class="flex items-center justify-between">
                                             <div class="flex items-center gap-2">
@@ -281,7 +281,7 @@
                                                     class="size-6 shrink-0">
                                                 <p>Insurance</p>
                                             </div>
-                                            <strong class="font-semibold">Rp {{ number_format($insurance, 0, '', '.') }}</strong>
+                                            <strong class="font-semibold">Rp {{ number_format($installment->insurance, 0, '', '.') }}</strong>
                                         </div>
                                         <div class="flex items-center justify-between">
                                             <div class="flex items-center gap-2">
@@ -290,7 +290,7 @@
                                                 <label for="grandTotal" class="text-gray-700 shrink-0">Grand Total
                                                     Amount</label>
                                             </div>
-                                            <input type="text" id="grandTotal" name="grandTotal" value="{{ number_format($grandTotalAmount, 0, '', '.') }}"
+                                            <input type="text" id="grandTotal" name="grandTotal" value="{{ number_format($installment->grandTotalAmount, 0, '', '.') }}"
                                                 readonly
                                                 class="font-bold text-[20px] text-end leading-[30px] text-tedja-blue bg-transparent border-none focus:outline-none" />
                                         </div>
