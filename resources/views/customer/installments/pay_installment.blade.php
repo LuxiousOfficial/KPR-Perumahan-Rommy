@@ -281,7 +281,7 @@
                                                     class="size-6 shrink-0">
                                                 <p>Insurance</p>
                                             </div>
-                                            <strong class="font-semibold">Rp {{ number_format($installment->insurance, 0, '', '.') }}</strong>
+                                            <strong class="font-semibold">Rp {{ number_format($insurance, 0, '', '.') }}</strong>
                                         </div>
                                         <div class="flex items-center justify-between">
                                             <div class="flex items-center gap-2">
