@@ -41,8 +41,7 @@ return [
         'public' => [
             'driver' => 'local',
             'root' => storage_path('app/public'),
-            // 'url' => rtrim(env('APP_URL', 'http://localhost'), '/').'/storage',
-            'url' => rtrim(env('APP_URL', 'https://perumahan-kpr.romyardiansyah.com'), '/').'/storage',
+            'url' => rtrim(env('APP_URL', 'http://localhost'), '/').'/storage',
             'visibility' => 'public',
             'throw' => false,
             'report' => false,
