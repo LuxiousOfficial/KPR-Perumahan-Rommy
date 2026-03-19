@@ -253,28 +253,28 @@
                                     <img src="{{ asset('assets/images/icons/note.svg') }}" alt="icon" class="size-6 shrink-0">
                                     <p>Monthly Payment</p>
                                 </div>
-                                <strong class="font-semibold">Rp {{ $installmentDetails->sub_total_amount, 0, '', '.' }}</strong>
+                                <strong class="font-semibold">Rp {{ $installmentDetails->sub_total_amount}}</strong>
                             </div>
                             <div class="flex items-center justify-between">
                                 <div class="flex items-center gap-2">
                                     <img src="{{ asset('assets/images/icons/note.svg') }}" alt="icon" class="size-6 shrink-0">
                                     <p>PPN 11%</p>
                                 </div>
-                                <strong class="font-semibold">Rp {{ $installmentDetails->total_tax_amount, 0, '', '.' }}</strong>
+                                <strong class="font-semibold">Rp {{ $installmentDetails->total_tax_amount}}</strong>
                             </div>
                             <div class="flex items-center justify-between">
                                 <div class="flex items-center gap-2">
                                     <img src="{{ asset('assets/images/icons/note.svg') }}" alt="icon" class="size-6 shrink-0">
                                     <p>Insurance</p>
                                 </div>
-                                <strong class="font-semibold">Rp {{ $installmentDetails->insurance_amount, 0, '', '.' }}</strong>
+                                <strong class="font-semibold">Rp {{ $installmentDetails->insurance_total_amount}}</strong>
                             </div>
                             <div class="flex items-center justify-between">
                                 <div class="flex items-center gap-2">
                                     <img src="{{ asset('assets/images/icons/note.svg') }}" alt="icon" class="size-6 shrink-0">
                                     <p>Grand Total Amount</p>
                                 </div>
-                                <strong class="font-bold text-[20px] leading-[30px] text-tedja-blue">Rp {{ $installmentDetails->grand_total_amount, 0, '', '.' }}</strong>
+                                <strong class="font-bold text-[20px] leading-[30px] text-tedja-blue">Rp {{ $installmentDetails->grand_total_amount}}</strong>
                             </div>
                         </div>
                         <hr class="border-[#F2F2F4]">
