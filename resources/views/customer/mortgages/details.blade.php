@@ -416,7 +416,7 @@
                                         </a>
                                     </div>
                                     <div class="flex flex-col gap-5">
-                                        @forelse ($mortgageRequest->installments as $installment)
+                                        @foreach($mortgageRequest->installments as $installment)
                                         <div class="flex items-center justify-between p-[10px] rounded-[30px] border border-[#F2F2F4]">
                                             <div class="flex items-center gap-[54px]">
                                                 <img src="{{ asset('assets/images/icons/crown-blue-fill.svg') }}" alt="icon" class="size-[60px] shrink-0">
@@ -438,9 +438,7 @@
                                                 <div class="rounded-full py-[12px] font-semibold flex justify-center w-[140px] bg-tedja-black text-[#FAFAFA]">Details</div>
                                             </a>
                                         </div>
-                                        @empty
-                                        <h2>Anda belum ada membayaran cicilan</h2>
-                                        @endforelse
+                                        @endforeach
                                     </div>
                                 </section>
                                 @endif
