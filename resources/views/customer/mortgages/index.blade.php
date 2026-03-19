@@ -139,7 +139,7 @@
                                 <a href="#" class="hover:text-tedja-blue transition-all duration-300">Rewards</a>
                             </li>
                             <li>
-                                <a href="my-mortgages.html" class="hover:text-tedja-blue transition-all duration-300">My Mortgages</a>
+                                <a href="{{ route('dashboard') }}" class="hover:text-tedja-blue transition-all duration-300">My Mortgages</a>
                             </li>
                             <li>
                                 <a href="#" class="hover:text-tedja-blue transition-all duration-300">Learn Property</a>
