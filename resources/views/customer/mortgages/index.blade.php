@@ -234,7 +234,7 @@
                                     class="font-semibold hover:text-[#FAFAFA] rounded-full py-[12px] w-[140px] border text-center border-tedja-black text-tedja-black bg-tedja-black transition-all duration-300 text-white">
                                     Manage</div>
                             </a>
-                            <a href="#">
+                            <a href="{{ route('dashboard.mortgage.details', $mortgage) }}">
                                 <div
                                     class="font-semibold hover:text-[#FAFAFA] rounded-full py-[12px] w-[140px] bg-white border text-center border-tedja-black text-tedja-black hover:bg-tedja-black transition-all duration-300">
                                     Details</div>
