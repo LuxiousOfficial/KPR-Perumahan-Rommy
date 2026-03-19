@@ -290,7 +290,7 @@
                                                 <label for="grandTotal" class="text-gray-700 shrink-0">Grand Total
                                                     Amount</label>
                                             </div>
-                                            <input type="text" id="grandTotal" name="grandTotal" value="{{ number_format($grandTotalAmount, 0, '', '.') }}"
+                                            <input type="text" id="grandTotal" name="grandTotal" value="Rp {{ number_format($grandTotalAmount, 0, '', '.') }}"
                                                 readonly
                                                 class="font-bold text-[20px] text-end leading-[30px] text-tedja-blue bg-transparent border-none focus:outline-none" />
                                         </div>
