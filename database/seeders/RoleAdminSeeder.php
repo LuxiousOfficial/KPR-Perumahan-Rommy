@@ -32,6 +32,6 @@ class RoleAdminSeeder extends Seeder
             'password' => Hash::make('rommyhouse2026'),
         ]);
 
-        $user->assignRole('admin');
+        $user->assignRole($adminRole);
     }
 }
