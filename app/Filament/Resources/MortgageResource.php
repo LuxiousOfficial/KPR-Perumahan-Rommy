@@ -235,7 +235,7 @@ class MortgageResource extends Resource
             ->columns([
                 //
                 Tables\Columns\ImageColumn::make('house.thumbnail'),
-                Tables\Columns\TextColumn::make('customer.name'),
+                Tables\Columns\TextColumn::make('customer.name')->searchable(),
                 Tables\Columns\TextColumn::make('house.name'),
                 Tables\Columns\TextColumn::make('status'),
             ])

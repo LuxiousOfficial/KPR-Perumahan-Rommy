@@ -350,11 +350,11 @@
                                 },
                                 onError: function(result) {
                                     alert('Payment failed: ' + result.status_message);
-                                    window.location.href = "{{ route('front.index') }}";
+                                    window.location.href = "{{ route('dashboard') }}";
                                 },
                                 onClose: function(result) {
                                     alert('Payment popup closed');
-                                    window.location.href = "{{ route('front.index') }}";
+                                    window.location.href = "{{ route('dashboard') }}";
                                 }
                             });
                         } else {
